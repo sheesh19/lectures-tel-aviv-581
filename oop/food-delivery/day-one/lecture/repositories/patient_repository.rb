@@ -36,7 +36,7 @@ class PatientRepository
   private
 
   def save_csv
-    CSV.open(@csv_file, "wb") do |file|
+    CSV.open(@csv_file, "w") do |file|
       file << [ "id", "name", "cured", "room_id"]
 
       @patients.each do |patient|
@@ -90,7 +90,7 @@ csv_file_room = File.join(__dir__, '../data/rooms.csv')
 room_repo = RoomRepository.new(csv_file_room)
 patient_repo = PatientRepository.new(csv_file, room_repo)
 
-luna = Patient.new(name: "Luna")
+luna = Patient.new(name: "Dumbledore")
 luna.room = room_repo.rooms.last
 
 patient_repo.add(luna)

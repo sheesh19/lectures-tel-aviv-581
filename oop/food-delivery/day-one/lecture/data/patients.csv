@@ -4,3 +4,5 @@ id,name,cured,room_id
 3,Ron,false,2
 4,Ginny,false,3
 5,Luna,false,3
+6,Cho,false,3
+7,Dumbledore,false,3
