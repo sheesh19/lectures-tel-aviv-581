@@ -1,0 +1,6 @@
+id,name,cured,room_id
+1,Harry,false,1
+2,Hermione,false,1
+3,Ron,false,2
+4,Ginny,false,3
+5,Luna,false,3
