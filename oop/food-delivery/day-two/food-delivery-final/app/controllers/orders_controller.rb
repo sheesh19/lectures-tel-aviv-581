@@ -47,10 +47,13 @@ class OrdersController
 
   private
 
+
   def list_my_undelivered_orders(current_user)
     my_undelivered_orders = @order_repository.my_undelivered_orders(current_user)
     @orders_view.display(my_undelivered_orders)
   end
+
+  # refactored our add steps into several methods
 
   def select_meal
     # display meal array
